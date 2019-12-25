@@ -92,8 +92,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1280,
-      "height": 960
+      "width": 1024,
+      "height": 768
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -102,8 +102,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 640,
-      "y": 480,
+      "x": 512,
+      "y": 384,
       "z": 0
     },
     "_scale": {
@@ -162,7 +162,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 491.9024293495612
+      "z": 338.61593287971556
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -271,8 +271,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1200,
-      "height": 795.6
+      "width": 960,
+      "height": 735.6
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -282,7 +282,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -50,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -329,7 +329,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 200,
+      "width": 160,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -339,8 +339,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -100,
-      "y": 322.2,
+      "x": -80,
+      "y": 232.2,
       "z": 0
     },
     "_scale": {
@@ -360,7 +360,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "85tLDafYBO36rrjoAljOng"
+    "_id": "e2PNJJHNpBlZEoQUo1FDqq"
   },
   {
     "__type__": "cc.Label",
@@ -378,7 +378,7 @@
     "_useOriginalSize": true,
     "_string": "游戏说明",
     "_N$string": "游戏说明",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -390,7 +390,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "88bR/45FVOw5POyLii1BuZ"
+    "_id": "f5Q+VWPAVLRYh9QpbQRwmL"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -418,7 +418,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1200,
+      "width": 960,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -428,8 +428,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -600,
-      "y": 262.2,
+      "x": -480,
+      "y": 172.2,
       "z": 0
     },
     "_scale": {
@@ -449,7 +449,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c0KEpSmTpFtaIFNJHWiROe"
+    "_id": "f6U9dLFN1NU6Jfa+cW15Rn"
   },
   {
     "__type__": "cc.Label",
@@ -467,7 +467,7 @@
     "_useOriginalSize": true,
     "_string": "你正在图书馆自习，却无意中进入梦乡，醒来时周围已",
     "_N$string": "你正在图书馆自习，却无意中进入梦乡，醒来时周围已",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -479,7 +479,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "b1NS1lzg1GB6C1c+QrC6t/"
+    "_id": "d1jjHZzpRFFZEB8qaJM+Ft"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -507,7 +507,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1200,
+      "width": 960,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -517,8 +517,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -600,
-      "y": 202.2,
+      "x": -480,
+      "y": 112.19999999999999,
       "z": 0
     },
     "_scale": {
@@ -538,7 +538,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "adYkexXcRArq2uH6Ax+ukx"
+    "_id": "dbl6iGG5dLK6LUi/3tjhJD"
   },
   {
     "__type__": "cc.Label",
@@ -556,7 +556,7 @@
     "_useOriginalSize": true,
     "_string": "然完全变了样。你的周围可能充满了诸多谜题和陷阱等",
     "_N$string": "然完全变了样。你的周围可能充满了诸多谜题和陷阱等",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -568,7 +568,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "a0ryabgb9IortWiGFWOtkN"
+    "_id": "84+zOHI1JDXZMzjEITyxB6"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -596,7 +596,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1200,
+      "width": 960,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -606,8 +606,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -600,
-      "y": 142.2,
+      "x": -480,
+      "y": 52.19999999999999,
       "z": 0
     },
     "_scale": {
@@ -627,7 +627,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "0fN5nVqI1F4ZETVM8vfnTT"
+    "_id": "11lijePVBBTLOsOCfDDaSK"
   },
   {
     "__type__": "cc.Label",
@@ -645,7 +645,7 @@
     "_useOriginalSize": true,
     "_string": "着你去破解，你要在这个昏暗而又奇妙的图书馆探索房",
     "_N$string": "着你去破解，你要在这个昏暗而又奇妙的图书馆探索房",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -657,7 +657,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e8SDFvcHRGuI9Gx4qsrb5c"
+    "_id": "71KNFRbilBerQUvfSSbrU1"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -685,7 +685,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 850,
+      "width": 680,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -695,8 +695,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -425,
-      "y": 82.19999999999999,
+      "x": -340,
+      "y": -7.800000000000011,
       "z": 0
     },
     "_scale": {
@@ -716,7 +716,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "3fLkfAatBGp5oWxgrJK/8q"
+    "_id": "3fXnIvC7FKpIr+fDjWBYqQ"
   },
   {
     "__type__": "cc.Label",
@@ -734,7 +734,7 @@
     "_useOriginalSize": true,
     "_string": "间，收集道具，最终找到出去的线索。",
     "_N$string": "间，收集道具，最终找到出去的线索。",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -746,7 +746,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "79JJ8WYDFEZI01v+H1LNVG"
+    "_id": "41E7RzHaVKC7VMkW7ZmnFS"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -774,7 +774,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 200,
+      "width": 160,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -784,8 +784,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -100,
-      "y": -37.80000000000001,
+      "x": -80,
+      "y": -127.80000000000001,
       "z": 0
     },
     "_scale": {
@@ -805,7 +805,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "31QpuGKa1ExKz81QtegdVG"
+    "_id": "f0LlY2D2dBlI/ZLRsN23UE"
   },
   {
     "__type__": "cc.Label",
@@ -823,7 +823,7 @@
     "_useOriginalSize": true,
     "_string": "操作说明",
     "_N$string": "操作说明",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -835,7 +835,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "38CqSm6atBnrBNHW1ho+FH"
+    "_id": "a3cm0S9PdMTImk+kygF0Bo"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -863,7 +863,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 475,
+      "width": 380,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -873,8 +873,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -237.5,
-      "y": -97.80000000000001,
+      "x": -190,
+      "y": -187.8,
       "z": 0
     },
     "_scale": {
@@ -894,7 +894,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e7j/mzwWRDXqXzu3NVBBH3"
+    "_id": "98unmZQW1G4ZT8eOqCKfM7"
   },
   {
     "__type__": "cc.Label",
@@ -912,7 +912,7 @@
     "_useOriginalSize": true,
     "_string": "↑↓←→  人物移动 ",
     "_N$string": "↑↓←→  人物移动 ",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -924,7 +924,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "63NiuN2lZDop0Q9fHxTcNp"
+    "_id": "0fJjF2s3VKXLuZwqk3XxNH"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -952,7 +952,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 325,
+      "width": 260,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -962,8 +962,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -162.5,
-      "y": -157.8,
+      "x": -130,
+      "y": -247.8,
       "z": 0
     },
     "_scale": {
@@ -983,7 +983,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "77qHfedw1CF6AXbWl6N7YT"
+    "_id": "1f+72YyapFSb9N2vIjrK+d"
   },
   {
     "__type__": "cc.Label",
@@ -1001,7 +1001,7 @@
     "_useOriginalSize": true,
     "_string": "Space  对话  ",
     "_N$string": "Space  对话  ",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -1013,7 +1013,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "c8zJ9wKI9Kl4EvlinzSKrx"
+    "_id": "f3CYXXy/BBlp6UauuNNd+l"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1041,7 +1041,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 325,
+      "width": 260,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -1051,8 +1051,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -162.5,
-      "y": -217.8,
+      "x": -130,
+      "y": -307.8,
       "z": 0
     },
     "_scale": {
@@ -1072,7 +1072,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "4ctD/S4idB9LJunDjDdxul"
+    "_id": "c1g9R63t1CIbwwT/JLfKYm"
   },
   {
     "__type__": "cc.Label",
@@ -1090,7 +1090,7 @@
     "_useOriginalSize": true,
     "_string": "Enter  背包  ",
     "_N$string": "Enter  背包  ",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -1102,7 +1102,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "2241jtfz1PG7S5z8hONoh+"
+    "_id": "55qcSUXBpF5pub9Z+2a/wO"
   },
   {
     "__type__": "cc.RichText",
@@ -1114,11 +1114,11 @@
     "_enabled": true,
     "_fontFamily": "黑体",
     "_isSystemFontUsed": true,
-    "_N$string": "<color=#00ff00>游戏说明</c>\n<color=#0fffff>你正在图书馆自习，却无意中进入梦乡，醒来时周围已然完全变了样。你的周围可能充满了诸多谜题和陷阱等着你去破解，你要在这个昏暗而又奇妙的图书馆探索房间，收集道具，最终找到出去的线索。\n\n<color=#00ff00>操作说明</c>\n<color=#0fffff>↑↓←→  人物移动 \nSpace  对话  \nEnter  背包  \n\n\n</color>",
+    "_N$string": "\n<color=#00ff00>游戏说明</c>\n<color=#0fffff>你正在图书馆自习，却无意中进入梦乡，醒来时周围已然完全变了样。你的周围可能充满了诸多谜题和陷阱等着你去破解，你要在这个昏暗而又奇妙的图书馆探索房间，收集道具，最终找到出去的线索。\n\n<color=#00ff00>操作说明</c>\n<color=#0fffff>↑↓←→  人物移动 \nSpace  对话  \nEnter  背包  \n</color>",
     "_N$horizontalAlign": 1,
-    "_N$fontSize": 50,
+    "_N$fontSize": 40,
     "_N$font": null,
-    "_N$maxWidth": 1200,
+    "_N$maxWidth": 960,
     "_N$lineHeight": 60,
     "_N$imageAtlas": null,
     "_N$handleTouchEvent": true,
@@ -1154,8 +1154,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 60
+      "width": 80,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1164,8 +1164,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -550,
-      "y": 400,
+      "x": -440,
+      "y": 330,
       "z": 0
     },
     "_scale": {
@@ -1219,8 +1219,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 60
+      "width": 80,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1277,8 +1277,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 80,
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1325,8 +1325,8 @@
     "_useOriginalSize": false,
     "_string": "返回",
     "_N$string": "返回",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -1570,8 +1570,8 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 1280,
-      "height": 960
+      "width": 1024,
+      "height": 768
     },
     "_fitWidth": true,
     "_fitHeight": true,

@@ -92,8 +92,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1280,
-      "height": 960
+      "width": 1024,
+      "height": 768
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -102,8 +102,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 640,
-      "y": 480,
+      "x": 512,
+      "y": 384,
       "z": 0
     },
     "_scale": {
@@ -162,7 +162,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 491.9024293495612
+      "z": 338.61593287971556
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -262,8 +262,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 700,
-      "height": 735.6
+      "width": 560,
+      "height": 675.6
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -320,7 +320,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 250,
+      "width": 200,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -330,8 +330,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": 292.2,
+      "x": -100,
+      "y": 262.2,
       "z": 0
     },
     "_scale": {
@@ -351,7 +351,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e4DMxgLmxB/LREBGVCaN7Y"
+    "_id": "20JJK3VkhD0Y4Hw/JAwPNC"
   },
   {
     "__type__": "cc.Label",
@@ -369,7 +369,7 @@
     "_useOriginalSize": true,
     "_string": "关于本游戏",
     "_N$string": "关于本游戏",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -381,7 +381,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "4fYW3m4HZCOLfpX3wnofm7"
+    "_id": "b5O4L/4l9HfLUHloYlCxJX"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -409,7 +409,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 450,
+      "width": 360,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -419,8 +419,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -225,
-      "y": 112.19999999999999,
+      "x": -180,
+      "y": 82.19999999999999,
       "z": 0
     },
     "_scale": {
@@ -440,7 +440,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "95wxveqPJETbhXnn5mZvoy"
+    "_id": "036tek9kFI3r/8y8LwNmzD"
   },
   {
     "__type__": "cc.Label",
@@ -458,7 +458,7 @@
     "_useOriginalSize": true,
     "_string": "制作团队：debugger",
     "_N$string": "制作团队：debugger",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -470,7 +470,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "49fyfeCNJOZauif/KxFztP"
+    "_id": "80C2H4DklHH7NWjMGY3X+h"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -498,7 +498,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
+      "width": 240,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -508,8 +508,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -67.80000000000001,
+      "x": -120,
+      "y": -37.80000000000001,
       "z": 0
     },
     "_scale": {
@@ -529,7 +529,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "49CSSnm4RPJrbPUzNkA9l+"
+    "_id": "c2maVkkkdOpJWgvgyh0chq"
   },
   {
     "__type__": "cc.Label",
@@ -547,7 +547,7 @@
     "_useOriginalSize": true,
     "_string": "队长：赵雨舟",
     "_N$string": "队长：赵雨舟",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -559,7 +559,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "a9yAcXaM5LHqcv3CJDoNgf"
+    "_id": "6dlEyfO8NKuosnyK6E9tHE"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -587,7 +587,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
+      "width": 120,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -597,8 +597,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -75,
-      "y": -187.8,
+      "x": -60,
+      "y": -157.8,
       "z": 0
     },
     "_scale": {
@@ -618,7 +618,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "55dP653lZHroHhJVR8u6nY"
+    "_id": "18jB0GNcdIro6cfxuVmf32"
   },
   {
     "__type__": "cc.Label",
@@ -636,7 +636,7 @@
     "_useOriginalSize": true,
     "_string": "队员：",
     "_N$string": "队员：",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -648,7 +648,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "ccnMXxP8RIpKOqfyge2mkG"
+    "_id": "78i4HFzcRNLozbnSUCwVCc"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -676,7 +676,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 700,
+      "width": 560,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -686,8 +686,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -350,
-      "y": -307.8,
+      "x": -280,
+      "y": -277.8,
       "z": 0
     },
     "_scale": {
@@ -707,7 +707,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "403oM2jvNFIJxBA6YvSeES"
+    "_id": "01FCMqyo5EPqiSRAMrpiMR"
   },
   {
     "__type__": "cc.Label",
@@ -725,7 +725,7 @@
     "_useOriginalSize": true,
     "_string": "蒋鹏、王璐瑶、赵融毅、胡展翃",
     "_N$string": "蒋鹏、王璐瑶、赵融毅、胡展翃",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -737,7 +737,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "a9Ptx3ErZDZKkOkprnGR2A"
+    "_id": "05htEHgJtOka8GfRU8Cn9Q"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -765,7 +765,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 700,
+      "width": 560,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -775,8 +775,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -350,
-      "y": -367.8,
+      "x": -280,
+      "y": -337.8,
       "z": 0
     },
     "_scale": {
@@ -796,7 +796,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "52ChvTtLtFmZpnb7RzRiM3"
+    "_id": "3cQ0nZWh1LXqTf3nzaMUmN"
   },
   {
     "__type__": "cc.Label",
@@ -814,7 +814,7 @@
     "_useOriginalSize": true,
     "_string": "袁舟、夏雨珂、曹子龙、刘善韬",
     "_N$string": "袁舟、夏雨珂、曹子龙、刘善韬",
-    "_fontSize": 50,
+    "_fontSize": 40,
     "_lineHeight": 60,
     "_enableWrapText": true,
     "_N$file": null,
@@ -826,7 +826,7 @@
     "_N$fontFamily": "黑体",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "b6IaJ4l7tP4omn4BCeBfY5"
+    "_id": "dcxPa54qdJsLE/WCTrC241"
   },
   {
     "__type__": "cc.RichText",
@@ -838,9 +838,9 @@
     "_enabled": true,
     "_fontFamily": "黑体",
     "_isSystemFontUsed": true,
-    "_N$string": "<color=#00ff00>关于本游戏</c>\n\n\n<color=#0fffff>制作团队：debugger</color>\n\n\n<color=#0fffff>队长：赵雨舟\n\n队员：\n\n蒋鹏、王璐瑶、赵融毅、胡展翃\n袁舟、夏雨珂、曹子龙、刘善韬</color>",
+    "_N$string": "<color=#00ff00>关于本游戏</c>\n\n\n<color=#0fffff>制作团队：debugger</color>\n\n<color=#0fffff>队长：赵雨舟\n\n队员：\n\n蒋鹏、王璐瑶、赵融毅、胡展翃\n袁舟、夏雨珂、曹子龙、刘善韬</color>",
     "_N$horizontalAlign": 1,
-    "_N$fontSize": 50,
+    "_N$fontSize": 40,
     "_N$font": null,
     "_N$maxWidth": 0,
     "_N$lineHeight": 60,
@@ -878,8 +878,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 60
+      "width": 80,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -888,8 +888,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -550,
-      "y": 400,
+      "x": -440,
+      "y": 330,
       "z": 0
     },
     "_scale": {
@@ -943,8 +943,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 60
+      "width": 80,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1001,8 +1001,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 80,
+      "height": 30
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1049,8 +1049,8 @@
     "_useOriginalSize": false,
     "_string": "返回",
     "_N$string": "返回",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": false,
     "_N$file": null,
     "_isSystemFontUsed": true,
@@ -1294,8 +1294,8 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 1280,
-      "height": 960
+      "width": 1024,
+      "height": 768
     },
     "_fitWidth": true,
     "_fitHeight": true,
