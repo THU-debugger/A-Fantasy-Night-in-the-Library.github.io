@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "DoorOpen",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.36666666666666664,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "2aa4556d-1e4a-4c9c-865a-f890c4a5ddc9"
+            }
+          },
+          {
+            "frame": 0.11666666666666667,
+            "value": {
+              "__uuid__": "716179bb-bd92-45e9-9507-cb423080fd31"
+            }
+          },
+          {
+            "frame": 0.23333333333333334,
+            "value": {
+              "__uuid__": "671e0b04-7932-4717-b857-361c0f4c7c08"
+            }
+          },
+          {
+            "frame": 0.35,
+            "value": {
+              "__uuid__": "51932759-7fc7-4291-8128-26ed7ab824d3"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
