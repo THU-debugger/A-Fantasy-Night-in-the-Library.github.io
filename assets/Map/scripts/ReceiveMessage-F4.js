@@ -48,19 +48,25 @@ cc.Class({
                 cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
                 this.Star.destroy();
                 console.log(this.thing[1]);
-				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ",dialog_text[8]);
+				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F4---",dialog_text[8]);
 				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
                 break;
             case "TreasureBox":
-                // 需要其他代码
-				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ","一个宝箱");
-				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+                if(this.thing[8]!=0){
+					this.player.tiledTile.y++;
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F4---","用钥匙打开了宝箱（叮）图书馆大门已经打开");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+					cc.sys.localStorage.setItem('date', 1);
+				}
+				else{
+					this.player.tiledTile.y++;
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F4---","一个宝箱，需要一把特制的钥匙");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}
 
                 break;
         }
-        
-    },
-
+	},
     onLoad () {
         // 读取初始化物品信息
         this.thing = JSON.parse(cc.sys.localStorage.getItem('Bag'));

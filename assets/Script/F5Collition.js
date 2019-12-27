@@ -37,8 +37,9 @@ cc.Class({
             {
             console.log(other.node.group);
             this.node.getChildByName("moduleDialog").active = true;
+			cc.director.loadScene("F5");     
             }
-        //cc.director.loadScene("F5");         
+            
     },
 
     start () {

@@ -54,10 +54,22 @@ cc.Class({
                 this.thing[0]++;
                 cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
                 this.Key.destroy();
-                console.log(this.thing[0]);
+                //console.log(this.thing[0]);
 				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ","又是一把钥匙");
 				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
                 break;
+			case "F5F1":	
+				cc.sys.localStorage.setItem('playerScene', JSON.stringify("F1"));
+	            cc.sys.localStorage.setItem('playerX', JSON.stringify(62));
+	            cc.sys.localStorage.setItem('playerY', JSON.stringify(130));
+				cc.director.loadScene("F1");
+				break;	
+			case "F5F3":	
+				cc.sys.localStorage.setItem('playerScene', JSON.stringify("F3"));
+	            cc.sys.localStorage.setItem('playerX', JSON.stringify(153));
+	            cc.sys.localStorage.setItem('playerY', JSON.stringify(39));
+				cc.director.loadScene("F3");
+				break;		
         }
         
     },
@@ -71,7 +83,7 @@ cc.Class({
         this.Star = this.node.getChildByName("Thing").getChildByName("F5-Star");
         this.Key = this.node.getChildByName("Thing").getChildByName("F5-Key");
         // 获取人物图层
-        this.player = this.node.parent.getChildByName("4-F5").getChildByName("Shelf").getChildByName("Character");
+        this.player = this.node.parent.getChildByName("4-F5").getChildByName("player").getChildByName("Character");
         this.player.tiledTile = this.player.getComponent(cc.TiledTile);
     },
 

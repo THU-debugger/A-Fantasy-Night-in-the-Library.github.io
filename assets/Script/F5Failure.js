@@ -35,7 +35,7 @@ cc.Class({
 
     //关闭窗口时刷新场景
     onDestroy: function(){
-        cc.director.loadScene("F5");
+        //cc.director.loadScene("F5");
     },
 
     start () {

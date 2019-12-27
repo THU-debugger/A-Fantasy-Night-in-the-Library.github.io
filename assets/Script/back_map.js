@@ -29,15 +29,27 @@ cc.Class({
         // },
         init:true,
         leave:true,
+        default_des:true,
         event_id:"",
     },
-
+    
+    back_to_map(){
+        if(this.leave){
+            var dm=cc.find("data_module").getComponent("data");
+            if(dm.available==0){
+            dm.event=this.event_id;
+            dm.available=1;}
+            cc.log("data change to,",data.event);
+            }
+    },
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        this.leave=this.default_des;
         if(this.init){
         var dd=cc.find("data_module").getComponent("data");
         if(dd.available=2){dd.available=0;}
+        cc.log("data available=0");
         }
     },
 
@@ -47,11 +59,5 @@ cc.Class({
 
     // update (dt) {},
     onDestroy(){
-        if(this.destroy){
-        var dm=cc.find("data_module").getComponent("data");
-        if(dm.available==0){
-        dm.event=this.event_id;
-        dm.available=1;}
-        }
-    }
+    },
 });

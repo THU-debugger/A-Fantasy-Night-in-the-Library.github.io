@@ -327,7 +327,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 340.96361987067627
+      "z": 280.55163588535567
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -1015,6 +1015,8 @@
       "__id__": 22
     },
     "_enabled": true,
+    "thing": [],
+    "player": null,
     "_id": "4bf7pXcjVBGacMnguytMVf"
   },
   {
@@ -1858,7 +1860,6 @@
       "__id__": 43
     },
     "_enabled": true,
-    "thing": [],
     "_id": "8cCYLDA0pHN5SAZe5LqQkA"
   },
   {

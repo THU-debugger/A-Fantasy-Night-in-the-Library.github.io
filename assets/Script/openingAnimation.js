@@ -55,7 +55,7 @@ cc.Class({
     },
 
     update (dt) {
-		console.log(this.node.getChildByName("text2").opacity);
+		
 		switch(this.rank){
 			case 1:if(this.node.getChildByName("text1").opacity<255)this.node.getChildByName("text1").opacity+=3;if(this.node.getChildByName("text1").opacity==255) this.rank++;break;
 			case 2:if(this.node.getChildByName("text2").opacity<255)this.node.getChildByName("text2").opacity+=3;if(this.node.getChildByName("text2").opacity==255) this.rank++;break;

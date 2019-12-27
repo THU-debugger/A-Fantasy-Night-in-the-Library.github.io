@@ -87,6 +87,16 @@ cc.Class({
 		//开始监听
 		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
 		// cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+		this.node.on("restart",this.restart_move,this);
+		this.node.on("stop",this.stop_move,this);
+	},
+	
+	restart_move(message) {
+		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+	},
+	
+	stop_move(message) {
+		cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
 	},
 	
 	// when key is pressed;
@@ -100,7 +110,7 @@ cc.Class({
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1) != 0 ) ||
 				(this.Ornament.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1) != 0 ) ||
 				(this.Shelf.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1) != 0 ) ){
-					console.log("11111");
+					//console.log("11111");
 					break;
 				}
 				//push_box, by Wang LuYao
@@ -108,15 +118,15 @@ cc.Class({
 				if ((this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1)) && 
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 2))) {
 					//alert("Barrier!");
-					console.log("22222");
+					//console.log("22222");
 					break;
 				} else if(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1) &&
 				(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 2))){
 					//alert("Too Many Box!");
-					console.log("33333");
+					//console.log("33333");
 					break;
 				} else if (this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1)) {//有箱子且无障碍物
-					console.log("44444");
+					//console.log("44444");
 					//this.Box.tiledLayer.getTiledTileAt(this.tiledTile.x, this.tiledTile.y - 1).y -= 1;
 					this.pushGid = this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1);
 					this.Box.tiledLayer.setTileGIDAt(0,this.tiledTile.x, this.tiledTile.y + 1);
@@ -137,23 +147,23 @@ cc.Class({
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1) != 0 ) ||
 				(this.Ornament.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1) != 0 ) ||
 				(this.Shelf.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1) != 0 ) ){
-					console.log("11111");
+					//console.log("11111");
 					break;
 				}
 				//推箱子判断
 				if ((this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1)) && 
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 2))) {
-					console.log("22222");
+					//console.log("22222");
 					//alert("Barrier!");
 					break;
 				} else if(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1) &&
 				(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 2))){
-					console.log("33333");
+					//console.log("33333");
 					//alert("Too Many Box!");
 					break;
 				} else if (this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1)) {//有箱子且无障碍物
 					//this.Box.tiledLayer.getTiledTileAt(this.tiledTile.x, this.tiledTile.y - 1).y -= 1;
-					console.log("44444");
+					//console.log("44444");
 					this.pushGid = this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1);
 					this.Box.tiledLayer.setTileGIDAt(0,this.tiledTile.x, this.tiledTile.y - 1);
 					this.tiledTile.y -= 1; 
@@ -173,23 +183,23 @@ cc.Class({
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y) != 0 ) ||
 				(this.Ornament.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y) != 0 ) ||
 				(this.Shelf.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y) != 0 ) ){
-					console.log("11111");
+					//console.log("11111");
 					break;
 				}
 				//推箱子判断
 				if ((this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y)) && 
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x - 2, this.tiledTile.y))) {
 					//alert("Barrier!");
-					console.log("22222");
+					//console.log("22222");
 					break;
 				} else if(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y) &&
 				(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x - 2, this.tiledTile.y))){
 					//alert("Too Many Box!");
-					console.log("33333");
+					//console.log("33333");
 					break;
 				} else if (this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y)) {//有箱子且无障碍物
 					//this.Box.tiledLayer.getTiledTileAt(this.tiledTile.x, this.tiledTile.y - 1).y -= 1;
-					console.log("44444");
+					//console.log("44444");
 					this.pushGid = this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y);
 					this.Box.tiledLayer.setTileGIDAt(0,this.tiledTile.x - 1, this.tiledTile.y);
 					this.tiledTile.x -= 1; 
@@ -209,23 +219,23 @@ cc.Class({
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y) != 0 ) ||
 				(this.Ornament.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y) != 0 ) ||
 				(this.Shelf.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y) != 0 ) ){
-					console.log("11111");
+					//console.log("11111");
 					break;
 				}
 				//推箱子判断
 				if ((this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y)) && 
 				(this.Wall.tiledLayer.getTileGIDAt(this.tiledTile.x + 2, this.tiledTile.y))) {
-					console.log("22222");
+					//console.log("22222");
 					//alert("Barrier!");
 					break;
 				} else if(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y) &&
 				(this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x + 2, this.tiledTile.y))){
-					console.log("33333");
+					//console.log("33333");
 					//alert("Too Many Box!");
 					break;
 				} else if (this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y)) {//有箱子且无障碍物
 					//this.Box.tiledLayer.getTiledTileAt(this.tiledTile.x, this.tiledTile.y - 1).y -= 1;
-					console.log("44444");
+					//console.log("44444");
 					this.pushGid = this.Box.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y);
 					this.Box.tiledLayer.setTileGIDAt(0,this.tiledTile.x + 1, this.tiledTile.y);
 					this.tiledTile.x += 1; 

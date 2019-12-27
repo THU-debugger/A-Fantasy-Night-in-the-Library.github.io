@@ -67,8 +67,18 @@ cc.Class({
 		//开始监听
 		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
 		// cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+		this.node.on("restart",this.restart_move,this);
+		this.node.on("stop",this.stop_move,this);
 	},
 	
+	restart_move(message) {
+		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+	},
+	
+	stop_move(message) {
+		cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+	},
+			
 	// when key is pressed;
 	onKeyDown(event){
 		switch(event.keyCode){

@@ -45,25 +45,73 @@ cc.Class({
         switch(message.detail){
             case "Button":
                 // 相应的响应函数
-				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ","一个按钮？");
-				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
-  
-                break;
+				this.node.getChildByName("游戏触发节点").getChildByName("barrier").destroy();
+				this.node.getChildByName("游戏触发节点").getChildByName("door-left").destroy();
+				this.node.getChildByName("游戏触发节点").getChildByName("door-right").destroy();
+				break;
             case "Soil":
                 if(this.thing[6] == 0){
-                    this.player.tiledTile.x ++;
-                    this.player.tiledTile.y --;
-					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ","一堆土，没有铲子之类的东西也弄不开吧");
+                    this.player.tiledTile.y ++;
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---","一堆土，没有铲子之类的东西也弄不开吧");
 					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
                 }    
                 else{
                     this.Soil.destroy();
                     this.thing[0] ++;
                     cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
-					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ",dialog_text[7]);
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---",dialog_text[7]);
 					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
                 }   
                 break;
+			case "B1B2":	
+				cc.sys.localStorage.setItem('playerScene', JSON.stringify("B2"));
+	            cc.sys.localStorage.setItem('playerX', JSON.stringify(168));
+	            cc.sys.localStorage.setItem('playerY', JSON.stringify(70));
+				cc.director.loadScene("B2");
+				break;
+			case "B1B2-2":	
+				cc.sys.localStorage.setItem('playerScene', JSON.stringify("B2"));
+	            cc.sys.localStorage.setItem('playerX', JSON.stringify(9));
+	            cc.sys.localStorage.setItem('playerY', JSON.stringify(85));
+				cc.director.loadScene("B2");
+				break;	
+			case "doorleft":	
+				this.player.tiledTile.x -= 2;
+				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---","门打不开");
+				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				break;	
+			case "doorright":	
+				this.player.tiledTile.x += 2;
+				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---","门打不开");
+				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				break;
+			case "lift":	
+				if(this.thing[5] == 0){
+                    this.player.tiledTile.y ++;
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---","没有电梯卡，不能坐电梯");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+                }    
+                else{
+                    cc.sys.localStorage.setItem('playerScene', JSON.stringify("F5"));
+		            cc.sys.localStorage.setItem('playerX', JSON.stringify(74));
+		            cc.sys.localStorage.setItem('playerY', JSON.stringify(25));
+					cc.director.loadScene("F5");
+                } 
+				break;
+			case "bookleft":
+				if(this.thing[7] == 0){
+					this.player.tiledTile.x -= 2;
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---","需要一本古籍才能通过");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}
+				break;	
+			case "bookright":	
+				if(this.thing[7] == 0){
+				this.player.tiledTile.x += 2;
+				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---B1---","需要一本古籍才能通过");
+				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}
+				break;
         }
         
     },

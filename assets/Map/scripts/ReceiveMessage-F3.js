@@ -63,6 +63,22 @@ cc.Class({
 				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ","门紧关着，似乎从里面才能打开");
 				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
                 break;
+			case "keyChecks":
+				if(this.thing[0]<3 ){
+					this.player.tiledTile.y -= 1;
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F3---","这个门似乎需要三把钥匙，我再找找吧");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}
+			break;	
+			case "switchgame":	
+				//cc.sys.localStorage.setItem('playerScene', JSON.stringify("SwitchGame"));
+				this.thing[3]++;
+				cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
+				cc.director.loadScene("SwitchGame -F3");
+				break;	
+
+			
+				
         }
         
     },

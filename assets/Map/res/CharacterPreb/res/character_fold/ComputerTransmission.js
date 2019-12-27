@@ -17,6 +17,7 @@ cc.Class({
         playersize: cc.v2(0, 0),
         Wall: cc.TiledLayer,
         Collision: cc.TiledLayer,
+        //OutCollision: cc.TiledLayer,
         Computer: cc.TiledLayer,
         Camera: cc.Camera,
         // 用于记录主相机位置
@@ -48,6 +49,8 @@ cc.Class({
         this.Computer.tiledLayer = this.Computer.getComponent(cc.TiledLayer);
         this.Collision = this.node.parent.parent.getChildByName("Collision");
         this.Collision.tiledLayer = this.Collision.getComponent(cc.TiledLayer);
+       // this.OutCollision = this.node.parent.parent.getChildByName("OutCollision");
+        //this.OutCollision.tiledLayer = this.OutCollision.getComponent(cc.TiledLayer);
         // 获取tiledtile信息，设置玩家初始位置
         this.tiledTile = this.getComponent(cc.TiledTile);
         this.Camera = this.node.parent.parent.parent.getChildByName("Main Camera");
@@ -58,9 +61,19 @@ cc.Class({
         this.node.height = this.playersize.height;
         this.node.width = this.playersize.width;
         //开始监听
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
-        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
-    },
+		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+		// cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+		this.node.on("restart",this.restart_move,this);
+		this.node.on("stop",this.stop_move,this);
+	},
+	
+	restart_move(message) {
+		cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+	},
+	
+	stop_move(message) {
+		cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+	},
 
     // when key is pressed;
     onKeyDown(event) {
@@ -86,6 +99,10 @@ cc.Class({
                     })
                     break;
                 }
+                //if (this.OutCollision.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1) != 0) {
+                  //  cc.find("Canvas").getComponent("back_map").destroy = true;
+                    //cc.find("Canvas").destroy;
+                //}
                 this.tiledTile.y += 1;
                 break;
             case cc.macro.KEY.up:

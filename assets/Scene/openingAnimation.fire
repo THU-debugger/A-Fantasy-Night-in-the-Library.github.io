@@ -171,7 +171,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 340.96361987067627
+      "z": 285.7212138419582
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -750,6 +750,8 @@
       "__id__": 15
     },
     "_enabled": false,
+    "thing": [],
+    "player": null,
     "_id": "a81v0mdZdE6ZrlDTXu3Stw"
   },
   {
@@ -1233,7 +1235,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 585.55,
+      "width": 583.35,
       "height": 211.89999999999998
     },
     "_anchorPoint": {
@@ -1291,7 +1293,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 585.55,
+      "width": 583.35,
       "height": 81.9
     },
     "_anchorPoint": {
@@ -1301,7 +1303,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -292.775,
+      "x": -291.675,
       "y": -40.94999999999999,
       "z": 0
     },
@@ -1322,7 +1324,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e2elET6G9AVbKJCCp7s2HY"
+    "_id": "e3+zW1pPVIBIDv+NCe6JxS"
   },
   {
     "__type__": "cc.Label",
@@ -1338,8 +1340,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "\"......呼噜噜......呼噜噜......\"",
-    "_N$string": "\"......呼噜噜......呼噜噜......\"",
+    "_string": "“......呼噜噜......呼噜噜......”",
+    "_N$string": "“......呼噜噜......呼噜噜......”",
     "_fontSize": 50,
     "_lineHeight": 65,
     "_enableWrapText": true,
@@ -1352,7 +1354,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "513VtkAppF0oa5GgfCAk3h"
+    "_id": "a8y4DprBtAnIZWCKRPA3Pg"
   },
   {
     "__type__": "cc.RichText",
@@ -1364,7 +1366,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "<color=#FFFFFF>\n\"......呼噜噜......呼噜噜......\"\n</color>",
+    "_N$string": "<color=#FFFFFF>\n“......呼噜噜......呼噜噜......”\n</color>",
     "_N$horizontalAlign": 1,
     "_N$fontSize": 50,
     "_N$font": null,
@@ -1493,7 +1495,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "96INCXUbJCTpwFnCpsuzwb"
+    "_id": "d22sC/TRBEqIBeS43k+miU"
   },
   {
     "__type__": "cc.Label",
@@ -1509,8 +1511,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "“诶，我刚刚不是在写作业吗“",
-    "_N$string": "“诶，我刚刚不是在写作业吗“",
+    "_string": "“诶，我刚刚不是在写作业吗”",
+    "_N$string": "“诶，我刚刚不是在写作业吗”",
     "_fontSize": 50,
     "_lineHeight": 65,
     "_enableWrapText": true,
@@ -1523,7 +1525,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f0uMTx8cFPWZCvtSDQULxB"
+    "_id": "13O95YzEhFVqJqs8FZLjCC"
   },
   {
     "__type__": "cc.RichText",
@@ -1535,7 +1537,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "<color=#FFFFFF>\n\n“诶，我刚刚不是在写作业吗“\n\n</color>",
+    "_N$string": "<color=#FFFFFF>\n\n“诶，我刚刚不是在写作业吗”\n\n</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 50,
     "_N$font": null,
@@ -1664,7 +1666,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "85RX224l1KF56b/PtYEy//"
+    "_id": "74X8CMMI1GN7R9gVMAwfhr"
   },
   {
     "__type__": "cc.Label",
@@ -1680,8 +1682,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "”怎么睡着了？”",
-    "_N$string": "”怎么睡着了？”",
+    "_string": "“怎么睡着了？”",
+    "_N$string": "“怎么睡着了？”",
     "_fontSize": 50,
     "_lineHeight": 65,
     "_enableWrapText": true,
@@ -1694,7 +1696,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "85R/kAqiZLIYPeifQCqJLQ"
+    "_id": "cfif8kpABCAL6KFoASb5Ek"
   },
   {
     "__type__": "cc.RichText",
@@ -1706,7 +1708,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "<color=#FFFFFF>\n”怎么睡着了？”\n</color>",
+    "_N$string": "<color=#FFFFFF>\n“怎么睡着了？”\n</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 50,
     "_N$font": null,
@@ -1835,7 +1837,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "514K7LLxVLG6iDSwEoPbjB"
+    "_id": "080uJc4gNIX4eHj3GZeWF7"
   },
   {
     "__type__": "cc.Label",
@@ -1865,7 +1867,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d5NAMwf3FARZcr619EiSRr"
+    "_id": "0dkIgYUyBBmYZ/yYBqkhnV"
   },
   {
     "__type__": "cc.RichText",
@@ -2006,7 +2008,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "75Th0JEuhPwprjx9elaYeQ"
+    "_id": "c9BMpQ03RPwIiJUOzZWpeo"
   },
   {
     "__type__": "cc.Label",
@@ -2036,7 +2038,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "c1bV6E2NBL1qDsaYB3aRGy"
+    "_id": "93DuGU7utLTa6kTwh1qdea"
   },
   {
     "__type__": "cc.RichText",
@@ -2177,7 +2179,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "17V4CPkhFPxaGn7e5A30if"
+    "_id": "c0J2ABeZtLKa5lft94vVU7"
   },
   {
     "__type__": "cc.Label",
@@ -2207,7 +2209,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "02KNgJDhtJb5/HdvOxLSkc"
+    "_id": "41dWCT9HpAzI3WAheEGdEE"
   },
   {
     "__type__": "cc.RichText",
@@ -2348,7 +2350,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "09g17dR+xFK7xTdp4mKOFk"
+    "_id": "fe+sBK4lJFbovioLT2Qx4t"
   },
   {
     "__type__": "cc.Label",
@@ -2378,7 +2380,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "ecJ0p0oytKt4Y8VmBdT/NV"
+    "_id": "d3vObGMZREy4KpKWCUFgad"
   },
   {
     "__type__": "cc.RichText",
@@ -2430,7 +2432,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 368.9,
+      "width": 366.7,
       "height": 211.89999999999998
     },
     "_anchorPoint": {
@@ -2488,7 +2490,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 368.9,
+      "width": 366.7,
       "height": 81.9
     },
     "_anchorPoint": {
@@ -2498,7 +2500,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -184.45,
+      "x": -183.35,
       "y": -40.94999999999999,
       "z": 0
     },
@@ -2519,7 +2521,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "b9DDP81P5Mbpk5PZPxY9+/"
+    "_id": "ebzWhJRFRODY4BarJPRroN"
   },
   {
     "__type__": "cc.Label",
@@ -2535,8 +2537,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "\"........................\"",
-    "_N$string": "\"........................\"",
+    "_string": "“........................”",
+    "_N$string": "“........................”",
     "_fontSize": 50,
     "_lineHeight": 65,
     "_enableWrapText": true,
@@ -2549,7 +2551,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "45w217cZBLmJN0zGy2NOxC"
+    "_id": "12Izmr6IVKM4WHBwAqvVfF"
   },
   {
     "__type__": "cc.RichText",
@@ -2561,7 +2563,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "<color=#FFFFFF>\n\"........................\"\n</color>",
+    "_N$string": "<color=#FFFFFF>\n“........................”\n</color>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 50,
     "_N$font": null,

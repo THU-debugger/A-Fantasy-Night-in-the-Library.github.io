@@ -67,11 +67,28 @@ cc.Class({
 
                 break;
             case "Machine":
-                // 需要调用函数，稍后编写
-				var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init(" ","一个神奇的机器");
-				cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
 
+                if(this.thing[3]!=0&&this.thing[4]!=0){
+					this.thing[8]++;
+					cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F2---","插入两张卡，得到一把特制的钥匙");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}
+				else if(this.thing[3]!=0||this.thing[4]!=0){
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F2---","似乎还需要一张卡");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}		
+				else{
+					var dialog = cc.instantiate(this.resizeDialog).getComponent("moduleDialog").init("---F2---","机器上有两个卡槽，看来得找到这两张卡");
+					cc.find("Canvas").getChildByName("Main Camera").addChild(dialog.node);
+				}					
                 break;
+			case "switchgame":	
+				//cc.sys.localStorage.setItem('playerScene', JSON.stringify("SwitchGame"));
+				this.thing[4]++;
+				cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
+				cc.director.loadScene("SwitchGame");
+				break;	
         }
         
     },
