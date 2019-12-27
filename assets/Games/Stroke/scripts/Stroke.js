@@ -25,6 +25,8 @@ cc.Class({
         goneNum: 0,
         // 记录已经走过的方块数量
         number: 0,
+        // 记录本层物品的拾取情况
+        thing: [cc.Integer],
 
 
         // foo: {
@@ -52,7 +54,7 @@ cc.Class({
             case ( cc.macro.KEY.up || cc.macro.KEY.w ):
                 // 如果前进的方向上有障碍物，则给出提示并不移动
                 if(this.barrier.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y - 1) == this.barrierNum){
-                    alert("Barrier!");
+                    //alert("Barrier!");
                     break;
                 }
                 // 如果走到已经走过的地方，则提示失败并不移动
@@ -67,7 +69,7 @@ cc.Class({
             case ( cc.macro.KEY.down || cc.macro.KEY.s ):
                 // 如果前进的方向上有障碍物，则给出提示并不移动
                 if(this.barrier.tiledLayer.getTileGIDAt(this.tiledTile.x, this.tiledTile.y + 1) == this.barrierNum){
-                    alert("Barrier!");
+                    //alert("Barrier!");
                     break;
                 }
                 // 如果走到已经走过的地方，则提示失败并不移动
@@ -82,7 +84,7 @@ cc.Class({
             case ( cc.macro.KEY.left || cc.macro.KEY.a ):
                 // 如果前进的方向上有障碍物，则给出提示并不移动
                 if(this.barrier.tiledLayer.getTileGIDAt(this.tiledTile.x - 1, this.tiledTile.y) == this.barrierNum){
-                    alert("Barrier!");
+                    //alert("Barrier!");
                     break;
                 }
                 // 如果走到已经走过的地方，则提示失败并不移动
@@ -97,7 +99,7 @@ cc.Class({
             case ( cc.macro.KEY.right || cc.macro.KEY.d ):
                 // 如果前进的方向上有障碍物，则给出提示并不移动
                 if(this.barrier.tiledLayer.getTileGIDAt(this.tiledTile.x + 1, this.tiledTile.y) == this.barrierNum){
-                    alert("Barrier!");
+                    //alert("Barrier!");
                     break;
                 }
                 // 如果走到已经走过的地方，则提示失败并不移动
@@ -139,6 +141,10 @@ cc.Class({
         this.tiledTile.x = this.mapsize.width / 2;
         this.tiledTile.y = this.mapsize.height - 1;
         this.node.parent.tiledLayer.setTileGIDAt(this.goneNum, this.tiledTile);
+        this.tiledTile.x = this.mapsize.width / 2;
+        this.tiledTile.y = this.mapsize.height - 2;
+        this.node.parent.tiledLayer.setTileGIDAt(this.goneNum, this.tiledTile);
+        this.node.parent.tiledLayer.setTileGIDAt(this.goneNum, this.tiledTile.x, 0);
         
         // 初始化player图像大小，符合地图
         this.node.height = this.playersize.height;
@@ -148,6 +154,8 @@ cc.Class({
         // cc.game.setFrameRate(15);
         // 初始化键盘输入监听
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        // 读取初始化物品信息
+        this.thing = JSON.parse(cc.sys.localStorage.getItem('Bag'));
     },
 
     
@@ -155,9 +163,16 @@ cc.Class({
     },
 
     update (dt) {
-        if( this.number == 39){
+        if( this.number == 37){
             alert("Success!");
-            cc.find("Canvas").destroy();
+            //cc.find("Canvas").getComponent("back_map").back_to_map();
+            this.number = 0;
+            this.thing[7] = 1;
+            cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
+			cc.sys.localStorage.setItem('playerScene', JSON.stringify("B1"));
+            cc.sys.localStorage.setItem('playerX', JSON.stringify(126));
+            cc.sys.localStorage.setItem('playerY', JSON.stringify(46));
+			cc.director.loadScene("B1");
         }        
     },
 });

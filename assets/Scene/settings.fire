@@ -174,7 +174,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 340.96361987067627
+      "z": 411.3620667976084
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -753,6 +753,8 @@
       "__id__": 15
     },
     "_enabled": true,
+    "thing": [],
+    "player": null,
     "_id": "e9IoDwNj9ByIYIdy6yeLOa"
   },
   {
@@ -957,8 +959,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "音乐：开",
-    "_N$string": "音乐：开",
+    "_string": "音乐",
+    "_N$string": "音乐",
     "_fontSize": 50,
     "_lineHeight": 50,
     "_enableWrapText": false,
@@ -981,6 +983,8 @@
       "__id__": 19
     },
     "_enabled": true,
+    "thing": [],
+    "player": null,
     "_id": "8ckLQSTUZNQrsXRBELV1Ok"
   },
   {
@@ -1335,8 +1339,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "音效：开",
-    "_N$string": "音效：开",
+    "_string": "音效",
+    "_N$string": "音效",
     "_fontSize": 50,
     "_lineHeight": 50,
     "_enableWrapText": false,

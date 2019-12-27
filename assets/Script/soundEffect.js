@@ -13,60 +13,39 @@ cc.Class({
 
     properties: {
 
+        // 按钮音效
         buttonSound:{
             type: cc.AudioClip,
             default: null,
         },
+
+        // 拾取物品音效
         pickSound: {
             type: cc.AudioClip,
             default: null,
         },
+
+        // 切换场景音效
         switchSound: {
             type: cc.AudioClip,
             default: null,
         },
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
     },
-
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         cc.game.addPersistRootNode(this.node);
-        
-        /*var music = JSON.parse(cc.sys.localStorage.getItem('music'));
-        if (music != 0) {
-            this.play();
-        }*/
     },
 
-    mainPlay: function () {
-        var effect = JSON.parse(cc.sys.localStorage.getItem('effect'));
-        if (effect != 0) {
-            this.seChannel = cc.audioEngine.play(this.mainSound, false, 1);
-        }
-    },
-
+    // 播放按钮音效
     buttonPlay: function () {
         var effect = JSON.parse(cc.sys.localStorage.getItem('effect'));
+        // 判断音效是否打开
         if (effect != 0) {
             this.seChannel = cc.audioEngine.play(this.buttonSound, false, 1);
         }
     },
 
+    // 播放拾取音效
     pickPlay: function () {
         var effect = JSON.parse(cc.sys.localStorage.getItem('effect'));
         if (effect != 0) {
@@ -74,6 +53,7 @@ cc.Class({
         }
     },
 
+    // 播放切换场景音效
     switchPlay: function () {
         var effect = JSON.parse(cc.sys.localStorage.getItem('effect'));
         if (effect != 0) {
@@ -81,13 +61,10 @@ cc.Class({
         }
     },
 
+    // 暂停音效
     pause: function () {
         cc.audioEngine.pause(this.seChannel);
     },
 
-    start () {
-
-    },
-
-    // update (dt) {},
+    start () {}
 });

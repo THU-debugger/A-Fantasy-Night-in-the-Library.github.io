@@ -11,39 +11,14 @@
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-        thing: [cc.Integer],
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-    },
-
-    // LIFE-CYCLE CALLBACKS:
+    properties: {},
 
     onLoad () {
-        for (var i = 0; i < 9; i++) {
-            this.thing[i] = 0;
-        }
         cc.game.addPersistRootNode(this.node);
-        cc.sys.localStorage.setItem('Bag', JSON.stringify(this.thing));
+        // 只在mainMenu场景第一次load的时候设置音乐和音效开
         cc.sys.localStorage.setItem('music', JSON.stringify(1));
         cc.sys.localStorage.setItem('effect', JSON.stringify(1));
     },
 
-    start () {
-    },
-
-    // update (dt) {},
+    start () {}
 });

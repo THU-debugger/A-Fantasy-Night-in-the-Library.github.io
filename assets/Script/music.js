@@ -18,44 +18,27 @@ cc.Class({
             type: cc.AudioClip,
             default: null,
         },
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
     },
-
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         cc.game.addPersistRootNode(this.node);
+        // 全局播放器，只在mainMenu第一次load或设置音乐开的时候播放
         this.playMusic();
     },
 
+    // 播放
     playMusic: function () {
         var music = JSON.parse(cc.sys.localStorage.getItem('music'));
+        // 判断音乐是否打开
         if (music != 0) {
             this.musicChannel = cc.audioEngine.play(this.bgMusic, true, 1);
         }
     },
 
+    // 暂停
     pause: function () {
         cc.audioEngine.pause(this.musicChannel);
     },
 
-    start () {
-
-    },
-
-    // update (dt) {},
+    start () {}
 });

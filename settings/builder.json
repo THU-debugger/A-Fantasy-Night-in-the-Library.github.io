@@ -21,7 +21,7 @@
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
   "md5Cache": false,
-  "mergeStartScene": false,
+  "mergeStartScene": true,
   "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
@@ -35,7 +35,7 @@
     "orientation": "portrait",
     "zip": false
   },
-  "startScene": "83cbb35e-2032-41b8-84ca-ddd402095956",
+  "startScene": "a4cb0db1-bfee-4c7e-8107-b570d3264794",
   "title": "Library_test",
   "webOrientation": "auto",
   "wechatgame": {

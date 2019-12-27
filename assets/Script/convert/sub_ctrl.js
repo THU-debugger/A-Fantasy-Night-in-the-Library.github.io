@@ -43,7 +43,7 @@ cc.Class({
  
     },
     onCollisionEnter(other,self){
-        console.log("collide");
+        console.log("collide---");
         this.node.dispatchEvent(new cc.Event.EventCustom(this.event_id,true));
         console.log("dispatch event ", this.event_id);
     },

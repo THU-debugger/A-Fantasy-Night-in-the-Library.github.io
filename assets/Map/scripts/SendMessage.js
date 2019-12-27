@@ -43,6 +43,7 @@ cc.Class({
 
     // 发生碰撞后发出信号
     onCollisionEnter(other,self){
+		console.log("send a message");
         var e = new cc.Event.EventCustom("sent",true);
         e.detail = this.thing_id;
         this.node.dispatchEvent(e,true);
